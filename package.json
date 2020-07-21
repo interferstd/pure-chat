@@ -1,0 +1,8 @@
+{
+  "name": "pure-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/interferstd/pure-chat.git",
+  "author": "Zaver <zaverclub@gmail.com>",
+  "license": "MIT"
+}
