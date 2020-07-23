@@ -1,0 +1,101 @@
+*{
+    font-family: "Tahoma";
+}
+
+.main-wrap{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-sidebar, .right-sidebar{
+    flex-grow: 1;
+    background-color: #393351;
+}
+
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.middle-section{
+    flex-grow: 4;
+    background-color: #2f2b44;
+}
+
+.groups{
+    display: block;
+}
+
+.groups-toolbar{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.groups-icons{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.rounded-icon{
+    cursor: pointer;
+    font-size: 0.7em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.groups-icons_item{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    line-height: 30px;
+    margin: 0 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.groups-icons_item:nth-child(1){background-color: #557bfb;}
+.groups-icons_item:nth-child(2){background-color: #f8cb8e;}
+.groups-icons_item:nth-child(3){background-color: #fa6592;}
+
+.groups-addnew{
+    width: 30px;
+    height: 30px;
+    background:
+            linear-gradient(#fff,#fff),
+            linear-gradient(#fff,#fff),
+            #577dff;
+    background-position:center;
+    background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+}
+
+.current-group{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 10px 30px;
+    background-color: rgba(85,123,251, .5);
+    align-items: center;
+}
+
+.current-group_name{
+    flex-grow: 2;
+    text-align: left;
+    color: #fff;
+}
+
+.current-group_edit{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, .2);
+    line-height: 30px;
+}
+
+.current-group_edit i{
+    color: #fff;
+    font-size: 0.8em;
+}
