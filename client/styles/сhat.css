@@ -2,8 +2,11 @@
     font-family: "Tahoma";
 }
 
-.main-wrap{
+.flex{
     display: flex;
+}
+
+.main-wrap{
     flex-direction: row;
     height: 100vh;
 }
@@ -14,7 +17,6 @@
 }
 
 .left-sidebar{
-    display: flex;
     flex-direction: column;
     padding: 50px 0;
 }
@@ -29,14 +31,12 @@
 }
 
 .groups-toolbar{
-    display: flex;
     flex-direction: row;
     padding: 0 20px;
 }
 
 .groups-icons{
     flex-grow: 2;
-    display: flex;
     flex-direction: row;
 }
 
@@ -75,7 +75,6 @@
 
 .current-group{
     margin-top: 10px;
-    display: flex;
     flex-direction: row;
     padding: 10px 20px 10px 30px;
     background-color: rgba(85,123,251, .5);
@@ -98,4 +97,41 @@
 .current-group_edit i{
     color: #fff;
     font-size: 0.8em;
+}
+
+.chats_wrapper{
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.chat_item{
+  margin-top: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  cursor: pointer;
+}
+
+.chat_icon{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.chat_name{
+  margin-left: 20px;
+  color: #fff;
+}
+
+.chat_item:nth-child(1) .chat_icon{background-color: green}
+.chat_item:nth-child(2) .chat_icon{background-color: red}
+.chat_item:nth-child(3) .chat_icon{background-color: blue}
+
+.chat_unreadable{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, .3);
 }
