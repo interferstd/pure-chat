@@ -6,7 +6,8 @@
   "author": "Zaver <zaverclub@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "go": "nodemon --watch server/index.ts"
+    "go": "nodemon --watch src/server/index.ts",
+    "dev": "nodemon src/server/index.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.7",
