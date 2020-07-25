@@ -6,7 +6,7 @@
   "author": "Zaver <zaverclub@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "go": "node server/index.ts"
+    "go": "nodemon --watch server/index.ts"
   },
   "dependencies": {
     "@types/node": "^14.0.24",
@@ -15,6 +15,7 @@
     "typescript": "^3.9.7"
   },
   "devDependencies": {
+    "nodemon": "^2.0.4",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   }
