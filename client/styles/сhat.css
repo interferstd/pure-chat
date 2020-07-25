@@ -19,6 +19,7 @@
 .left-sidebar{
     flex-direction: column;
     padding: 50px 0;
+    width: 100px;
 }
 
 .middle-section{
@@ -108,8 +109,13 @@
   margin-top: 10px;
   flex-direction: row;
   align-items: center;
-  padding: 20px 10px 20px 10px;
+  padding: 10px;
   cursor: pointer;
+}
+
+.chat_item__active{
+    background-color: #574e7b;
+    border-radius: 50px 0 0 50px;
 }
 
 .chat_icon{
@@ -117,6 +123,7 @@
   height: 30px;
   color: #fff;
   line-height: 30px;
+  background-size: cover;
 }
 
 .chat_name{
