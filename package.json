@@ -9,9 +9,13 @@
     "go": "nodemon --watch server/index.ts"
   },
   "dependencies": {
+    "@types/express": "^4.17.7",
     "@types/node": "^14.0.24",
     "dotenv": "^8.2.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-import": "^2.22.0",
     "express": "^4.17.1",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
   "devDependencies": {
