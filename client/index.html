@@ -3,17 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Pure chat App</title>
-  <style>
-    .container {
-      width: 100%;
-      text-align: center;
-      padding: 50px;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles/сhat.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-  <div class="container">
-    <h2>Hello! It's Pure chat App! Go <a href="./pages/chat.html">here</a> to see chat page.</h2>
+<div class="main-wrap flex">
+  <div class="left-sidebar flex">
+    <div class="groups">
+      <div class="groups-toolbar flex">
+        <div class="groups-icons flex">
+          <div class="groups-icons_item rounded-icon">W</div>
+          <div class="groups-icons_item rounded-icon">F</div>
+          <div class="groups-icons_item rounded-icon">H</div>
+        </div>
+        <div class="groups-addnew rounded-icon"></div>
+      </div>
+      <div class="current-group flex">
+        <div class="current-group_name">Work Group</div>
+        <div class="current-group_edit rounded-icon">
+          <i class='fas fa-pen'></i>
+        </div>
+      </div>
+    </div>
+    <div class="chats"></div>
   </div>
+  <div class="middle-section">
+  </div>
+  <div class="right-sidebar">
+  </div>
+</div>
+
+<script id="chatsTemplate" type="text/template">
+  <div class="chats_wrapper flex">
+    {{#each users}}
+    <div class="chat_item flex">
+      <div class="chat_icon rounded-icon" {{#if avatar}}style="background:center / cover url('{{avatar}}')"{{/if}}>{{{shortName}}}</div>
+      <div class="chat_name">{{fullName}}</div>
+      <div class="chat_unreadable rounded-icon">{{unreadable}}</div>
+    </div>
+    {{/each}}
+  </div>
+</script>
+
+<script src="./bundle.js"></script>
+
 </body>
 </html>
