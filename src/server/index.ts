@@ -1,4 +1,5 @@
 // Environment variables
+import path from 'path'
 require("dotenv");
 const PORT = process.env.PORT || 3000;
 
@@ -16,5 +17,5 @@ app.listen(PORT,
 
 // Routes
 app.get('/', (req: Request, res: Response) => {
-    res.sendFile('/home/be9st/WebstormProjects/pure-chat/src/client/index.html')
+    res.sendFile(path.resolve(__dirname, "../client/index.html"))
 })

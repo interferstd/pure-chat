@@ -1,10 +1,13 @@
 import Model from "./model";
 import View from './view';
-import Controller from './controller'
+import Controller from './controller';
+import '@/client/styles/style.css';
+
+
 
 (async () => {
   try {
-    Controller.dialogs();
+    await Controller.dialogs();
   }catch (e) {
     console.log('error fetch data: ', e);
   }
