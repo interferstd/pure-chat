@@ -1,11 +1,11 @@
 // Environment variables
-require("dotenv");
-const PORT = process.env.PORT || 3000;
+require("dotenv").config();
+const PORT = process.env.PORT || 8080;
 
 // Imports
 import express, {Application, Request, Response} from 'express';
 import path from "path";
-import rootPath from './path';
+import rootDir from './path';
 
 // Creating express server
 const app: Application = express();
@@ -14,11 +14,9 @@ const app: Application = express();
 app.use(express.static('dist'));
 
 // On server run
-app.listen(PORT,
-    ()=>console.log(`Listening on port ${PORT}`)
-);
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
 // Routes
 app.get('/', (req: Request, res: Response) => {
-    res.sendFile(path.resolve( rootPath, "/dist/index.html"))
+    res.sendFile(path.resolve( rootDir, "/dist/index.html"))
 })
